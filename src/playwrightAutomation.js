@@ -24,7 +24,7 @@ export async function downloadReport(url, downloadPath){
 
                     await page.getByRole('link', { name: pSelector, exact: true}).click({ force: true});
 
-                    //Selectors to get the specific reports page
+                    //Selectors to get the specific reports page i.e. 2nd page
                     const targetReportSelectors = ['CR Report', 'ESG Presentation'];
                     let foundReportElement = false;
 
@@ -58,14 +58,9 @@ export async function downloadReport(url, downloadPath){
             
                                 await page.getByRole('link', { name: p3Selector, exact: true}).click({ force: true});
 
-                                //Selectors to get the specific reports page
-                                let d = new Date();
-                                let year = d.getFullYear()-1;
-
                                 const target3ReportSelectors = ['CR Report', 'ESG Presentation'];
 
                                 for (const r3Selector of target3ReportSelectors) {
-                                    console.log("text="+r3Selector)
 
                                     const report3ElementHandle = await page.$("text="+r3Selector);
             
