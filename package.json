@@ -3,5 +3,17 @@
     "csv-parser": "^3.0.0",
     "fs": "^0.0.1-security",
     "playwright": "^1.46.1"
-  }
+  },
+  "name": "esgreportsbot",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }
