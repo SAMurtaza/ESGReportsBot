@@ -14,7 +14,7 @@ export async function downloadReport(url, downloadPath){
         
             await page.getByRole('link', { name: 'Corporate responsibility', exact: true}).click({ force: true});
 
-            await page.getByTitle('Corporate Responsibility Report').click({ force: true});
+            await page.getByLabel('Corporate Responsibility Report', { exact: true }).click({ force: true});
 
         } catch (error) {
 
