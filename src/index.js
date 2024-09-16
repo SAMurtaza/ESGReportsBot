@@ -1,5 +1,6 @@
 import { readUrlsFromCsv } from "./readCSVFile.js";
-import { downloadReport } from "./playwrightAutomation.js";
+//import { downloadReport } from "./playwrightAutomationMain.js";
+import { downloadReport } from "./playwrightAutoChatGPT.js";
 import   fs  from 'fs'; 
 
 const csvFilePath = '../urls/TestESG.csv';
